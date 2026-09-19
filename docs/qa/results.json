@@ -1,0 +1,168 @@
+{
+  "results": [
+    {
+      "name": "Inicio: filtro de módulos y consulta de reservas",
+      "ok": true
+    },
+    {
+      "name": "Navegación: módulo integrado y selector común",
+      "ok": true
+    },
+    {
+      "name": "Insumos: conservación de indicadores y unidades separadas",
+      "ok": true
+    },
+    {
+      "name": "Insumos: selección múltiple, ninguno, todos y paginación",
+      "ok": true
+    },
+    {
+      "name": "Insumos: exportación real de selección y contexto",
+      "ok": true
+    },
+    {
+      "name": "Insumos: exportación respeta búsqueda de producto",
+      "ok": true
+    },
+    {
+      "name": "Producción: barras cero, etiquetas y escala de TCH",
+      "ok": true
+    },
+    {
+      "name": "TCH: sin evaluaciones no muestra producción cero",
+      "ok": true
+    },
+    {
+      "name": "Riego: carga directa y conservación del resumen",
+      "ok": true
+    },
+    {
+      "name": "Labores: datos base y navegación de detalle",
+      "ok": true
+    },
+    {
+      "name": "Riego: exportación de imagen y Excel",
+      "ok": true
+    },
+    {
+      "name": "Tabla de Insumos: columnas visibles y restauración",
+      "ok": true
+    },
+    {
+      "name": "Móvil 390px: inicio",
+      "ok": true
+    },
+    {
+      "name": "Móvil 390px: produccion",
+      "ok": true
+    },
+    {
+      "name": "Móvil 390px: tch",
+      "ok": true
+    },
+    {
+      "name": "Móvil 390px: riego",
+      "ok": true
+    },
+    {
+      "name": "Móvil 390px: insumos",
+      "ok": true
+    },
+    {
+      "name": "Móvil 390px: labores",
+      "ok": true
+    },
+    {
+      "name": "Móvil 390px: inventario",
+      "ok": true
+    }
+  ],
+  "inspection": [
+    {
+      "name": "inicio",
+      "dims": {
+        "w": 390,
+        "scroll": 390
+      },
+      "errors": []
+    },
+    {
+      "name": "produccion",
+      "dims": {
+        "w": 390,
+        "scroll": 390
+      },
+      "errors": []
+    },
+    {
+      "name": "tch",
+      "dims": {
+        "w": 390,
+        "scroll": 390
+      },
+      "errors": []
+    },
+    {
+      "name": "riego",
+      "dims": {
+        "w": 390,
+        "scroll": 390
+      },
+      "errors": []
+    },
+    {
+      "name": "insumos",
+      "dims": {
+        "w": 390,
+        "scroll": 390
+      },
+      "errors": []
+    },
+    {
+      "name": "labores",
+      "dims": {
+        "w": 390,
+        "scroll": 390
+      },
+      "errors": []
+    },
+    {
+      "name": "inventario",
+      "dims": {
+        "w": 390,
+        "scroll": 390
+      },
+      "errors": []
+    },
+    {
+      "route": "modules/produccion/",
+      "labels": [
+        {
+          "text": "Módulo técnico",
+          "tag": "STRONG",
+          "cls": "",
+          "parent": "casur-admin-launcher-copy",
+          "color": "rgb(36, 51, 45)",
+          "bg": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "route": "modules/riego/",
+      "labels": [
+        {
+          "text": "146.0 ha · 21 suertes",
+          "tag": "DIV",
+          "cls": "focus-action-area",
+          "parent": "focus-action-body",
+          "color": "rgb(32, 90, 38)",
+          "bg": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "route": "modules/labores/",
+      "labels": []
+    }
+  ]
+}

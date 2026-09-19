@@ -1,0 +1,36 @@
+{
+  "results": [
+    {
+      "name": "Actualización 1.0.0 a 1.1.0 conserva IndexedDB, localStorage, LKG y caché ajena",
+      "ok": true
+    },
+    {
+      "name": "Carga sin red después de visita: Inicio",
+      "ok": true
+    },
+    {
+      "name": "Carga sin red después de visita: modules/insumos/",
+      "ok": true
+    },
+    {
+      "name": "Carga sin red después de visita: modules/tch/",
+      "ok": true
+    },
+    {
+      "name": "Carga sin red después de visita: modules/produccion/",
+      "ok": true
+    }
+  ],
+  "preserved": {
+    "local": "preserved",
+    "idb": "preserved",
+    "lkg": "preserved",
+    "external": "preserved",
+    "keys": [
+      "estimador-tch-qa-preserve",
+      "casur_master_prod_lkg",
+      "casur_master_shell_v1.1.0",
+      "casur_master_data_v1.1.0"
+    ]
+  }
+}

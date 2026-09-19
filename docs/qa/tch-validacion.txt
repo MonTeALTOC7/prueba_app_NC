@@ -1,0 +1,36 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> estimador-tch-casur-pwa@2.7.2 validate
+> node tests/validate-static.mjs && node --test tests/*.test.mjs
+
+Estructura estática PWA v2.7.2 validada.
+✔ fórmula oficial H(m) y D(mm) reproduce 162.916 TCH (0.972965ms)
+✔ segundo ejemplo oficial reproduce 102.057 TCH (0.128273ms)
+✔ compatibilidad v2.3 conserva fórmula con longitud y diámetro en cm (0.16625ms)
+✔ proyección por edad siempre parte del TCH biométrico (0.15279ms)
+✔ pesaje opcional calcula peso promedio y TCH contraste (0.275495ms)
+✔ TCHpeso no depende de una edad mínima en el motor (0.101993ms)
+✔ pesaje completo heredado produce 80 TCH (0.1666ms)
+✔ peso promedio por tallo heredado aplica población y surco (0.128143ms)
+✔ división por cero retorna null (0.128353ms)
+✔ estadística mantiene variabilidad sin cambiar el promedio (0.339741ms)
+✔ maestro integrado conserva cero de suerte, tenencia y compatibilidad legacy (0.960666ms)
+✔ Sucuya / Zona 0 queda fuera del maestro operativo (0.340784ms)
+✔ Productores se prioriza en búsquedas equivalentes sin ocultar otras zonas (0.209375ms)
+✔ maestro publicado conserva campos y detecta cambios por huella (7.562188ms)
+✔ actualizador 26/27 vincula por código hacienda + suerte normalizada (1.576164ms)
+✔ cronológico oficial detecta REPORTE y encabezados flexibles (1.193337ms)
+✔ copia FileList antes de que el input sea limpiado (1.145656ms)
+✔ mantiene todas las fotos seleccionadas sin límite artificial (0.189495ms)
+✔ acepta Blob nuevo y Base64 legado sin perder compatibilidad (0.560925ms)
+✔ nombre directo de PNG incluye código, productor, suerte, fecha y número (0.326972ms)
+✔ etiqueta gerencial conserva observación completa y omite campos sin registrar (0.573885ms)
+✔ ZIP masivo permite exportar solo originales sin depender de Excel o canvas (1.093967ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 91.806031
