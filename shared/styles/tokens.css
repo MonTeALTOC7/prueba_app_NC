@@ -1,0 +1,101 @@
+/* ============================================================
+   tokens.css — Sistema de diseño "Negocios de Caña CASUR"
+   Identidad: caña de azúcar + campo + riego + tecnología agrícola.
+   Sin fuentes externas (offline-first). Editar aquí para re-tematizar.
+   ============================================================ */
+
+:root {
+  /* --- Paleta ejecutiva clara · v1.1.0 --- */
+  --navy-900: #F4F6F5;
+  --navy-800: #F4F6F5;
+  --navy-700: #EAF2EB;
+  --navy-600: #DCE4DE;
+  --navy-500: #2E7D32;
+
+  /* --- Colores corporativos CASUR (muestreados del logo oficial) --- */
+  --casur-green: #2E7D32;        /* verde CASUR (C-A) */
+  --casur-green-deep: #205A26;
+  --casur-green-light: #7CB342;
+  --casur-blue: #0D6EAF;         /* azul CASUR (S-U-R) / agua */
+  --casur-blue-deep: #09568B;
+  --casur-blue-light: #0D6EAF;
+  --casur-lime: #8CC63F;         /* líneas / hojas */
+  --casur-sun: #F2C94C;          /* sol / cosecha */
+
+  /* Alias usados por el resto del sistema (mapeados a corporativo) */
+  --cane-lime: var(--casur-green);
+  --cane-light: var(--casur-green-light);
+  --teal: var(--casur-blue);
+  --teal-light: var(--casur-blue-light);
+  --gold: var(--casur-sun);
+  --clay: #C88A3C;               /* tierra / surco */
+
+  /* --- Texto --- */
+  --ink: #24332D;              /* texto principal sobre marino */
+  --ink-soft: #596B60;         /* secundario */
+  --ink-faint: #596B60;        /* terciario / metadatos */
+  --ink-on-lime: #06301A;      /* texto sobre verde */
+
+  /* --- Superficies --- */
+  --surface: #FFFFFF;                       /* tarjeta base */
+  --surface-2: #F6F8F6;                      /* tarjeta elevada */
+  --surface-glass: #F4F6F5;   /* vidrio */
+  --hairline: #DCE4DE;     /* bordes finos */
+  --hairline-strong: #BDCDC0;
+
+  /* --- Estados --- */
+  --ok: #4FBE7A;
+  --warn: #E7B84B;
+  --err: #E4685F;
+  --offline: #7C90A6;
+
+  /* --- Radios --- */
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 16px;
+  --r-xl: 20px;
+  --r-pill: 999px;
+
+  /* --- Sombras (profundidad 3D moderada) --- */
+  --shadow-card: 0 2px 8px rgba(26,53,35,.045);
+  --shadow-tile: none;
+  --shadow-pop: 0 14px 40px rgba(26,53,35,.14);
+
+  /* --- Tipografía: stack de sistema afinado (sin descargas) --- */
+  --font-ui: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+             "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --font-num: ui-monospace, "SF Mono", "Roboto Mono", Menlo, monospace;
+
+  /* --- Escala de tipo --- */
+  --t-display: clamp(1.6rem, 4.5vw, 2.2rem);
+  --t-h2: clamp(1.15rem, 3vw, 1.4rem);
+  --t-body: 1rem;
+  --t-sm: 0.875rem;
+  --t-xs: 0.75rem;
+
+  /* --- Espaciado --- */
+  --sp-1: 4px;  --sp-2: 8px;  --sp-3: 12px; --sp-4: 16px;
+  --sp-5: 20px; --sp-6: 24px; --sp-7: 32px; --sp-8: 40px;
+
+  /* --- Layout --- */
+  --header-h: 60px;
+  --nav-h: 66px;
+  --content-max: 1440px;
+
+  /* --- Áreas seguras (notch / gestos) --- */
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Acentos por módulo — todos derivados de la paleta corporativa CASUR
+   (verde → teal → azul → lima → dorado), diferenciados pero coherentes. */
+:root {
+  --accent-produccion: #2E7D32;   /* verde CASUR */
+  --accent-tch: #2E7D32;          /* teal (datos/foto) */
+  --accent-riego: #0D6EAF;        /* azul CASUR (agua) */
+  --accent-insumos: #2E7D32;      /* lima (insumos) */
+  --accent-inventario: #596B60;   /* azul Pansaco (continuidad) */
+  --accent-labores: #2E7D32;      /* dorado tierra (tractor/labor) */
+  --accent-admin: #12A98C;
+  --accent-private: #E4685F;
+}
