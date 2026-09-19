@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#2E7D32">
+  <meta name="description" content="Biometría TCH, visitas de campo con evidencia fotográfica y Maestro General CASUR">
+  <title>Estimador TCH CASUR</title>
+  <!-- [INTEGRACIÓN App Maestra] Manifest propio DESACTIVADO: una sola PWA
+       instalable (Negocios de Caña, manifest raíz). -->
+  <!-- <link rel="manifest" href="./manifest.webmanifest"> -->
+  <link rel="icon" href="./assets/icons/tch-icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/icons/tch-icon-192.png">
+  <link rel="stylesheet" href="./css/casur.css">
+<link rel="stylesheet" href="../../shared/styles/casur-executive.css">
+</head>
+<body data-casur-module="tch">
+  <div class="topline"></div>
+  <header class="app-header">
+    <button class="brand" data-route="home" aria-label="Ir al inicio">
+      <span class="logo-plate"><img src="./assets/logo_casur.png" alt="CASUR"></span>
+      <span><small>NEGOCIOS DE CAÑA</small><strong>Estimador TCH</strong><em>Biometría y evidencia de campo</em></span>
+    </button>
+    <span class="connection" id="connectionBadge">● En línea</span>
+  </header>
+  <main id="app" class="main" aria-live="polite"></main>
+  <nav class="bottom-nav" aria-label="Navegación principal">
+    <button data-route="home" class="active"><b>⌂</b><span>Inicio</span></button>
+    <button data-route="biometry"><b>🌱</b><span>Biometría</span></button>
+    <button data-route="visits"><b>📷</b><span>Visitas</span></button>
+    <button data-route="history"><b>▤</b><span>Historial</span></button>
+    <button data-route="analytics"><b>⌕</b><span>Consulta</span></button>
+  </nav>
+  <div id="toast" class="toast" role="status"></div>
+  <div id="modal" class="modal" hidden><div class="modal-card" id="modalContent"></div></div>
+  <!-- [INTEGRACIÓN App Maestra] Tarjeta "Instalar Estimador TCH" ELIMINADA:
+       la instalación pertenece únicamente a la PWA maestra (Negocios de Caña).
+       El repositorio fuente standalone conserva su tarjeta. -->
+  <input id="masterFile" type="file" accept=".xlsx,.xls" hidden>
+  <input id="estimateFile" type="file" accept=".xlsx,.xls" hidden>
+  <input id="backupFile" type="file" accept=".json" hidden>
+  <input id="visitCameraFile" type="file" accept="image/*" capture="environment" hidden>
+  <input id="visitGalleryFile" type="file" accept="image/*" multiple hidden>
+  <script src="./vendor/xlsx.bundle.js"></script>
+  <script type="module" src="./js/app.js"></script>
+<script src="../../shared/components/executive-ui.js" defer></script>
+</body>
+</html>

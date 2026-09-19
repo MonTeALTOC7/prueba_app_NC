@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2E7D32" />
+    <meta name="description" content="Seguimiento operativo de labores realizadas por semana, hacienda, suerte y labor · CASUR" />
+    <title>Seguimiento de Labores · Prefacturas · CASUR</title>
+    <script>
+      /* [Fase 8B.1] Vista pública restringida a "Seguimiento de labores".
+         La app soporta abrir directamente en esa vista via #tracking. */
+      (function () {
+        var LOCK = 'tracking';
+        if (location.hash.replace('#', '') !== LOCK) location.hash = LOCK;
+        window.addEventListener('hashchange', function () {
+          if (location.hash.replace('#', '') !== LOCK) location.hash = LOCK;
+        });
+      })();
+    </script>
+    <style>
+      /* [Fase 8B.1] Solo "Seguimiento de labores" visible (4ta pestaña del array Ja). */
+      .sidebar > nav > button:not(:nth-child(4)) { display: none !important; }
+      .sidebar-foot { display: none !important; }
+      .brand strong, .brand span { visibility: hidden; position: relative; display: block; }
+      .brand strong::after {
+        visibility: visible; position: absolute; left: 0; top: 0; white-space: nowrap;
+        content: "Seguimiento de Labores";
+      }
+      .brand span::after {
+        visibility: visible; position: absolute; left: 0; top: 0;
+        content: "Prefacturas · por semana, hacienda, suerte y labor";
+      }
+    </style>
+
+    <script type="module" crossorigin src="./assets/index-8b2-1-public.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/react-BRnhmgIC.js">
+    <link rel="modulepreload" crossorigin href="./assets/storage-DSGY8JT7.js">
+    <link rel="modulepreload" crossorigin href="./assets/spreadsheet-TXgaev3-.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-BY74yemB.css">
+  <!-- [INTEGRACIÓN App Maestra] Manifest y registro de SW propios DESACTIVADOS: una sola PWA instalable, un solo SW raíz (Negocios de Caña). --><!-- <link rel="manifest" href="./manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="./registerSW.js"></script> --><link rel="stylesheet" href="../../shared/styles/casur-executive.css">
+</head>
+  <body data-casur-module="labores">
+    <div id="root"></div>
+  <script src="../../shared/components/executive-ui.js" defer></script>
+</body>
+</html>
